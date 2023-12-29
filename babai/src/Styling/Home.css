@@ -1,0 +1,5 @@
+img {
+    filter: blur(0.5px); /* Apply a slight blur */
+    outline: 1px solid white; /* Add a white outline to enhance edges */
+    opacity: 0.9; /* Adjust opacity for better visibility */
+  }
