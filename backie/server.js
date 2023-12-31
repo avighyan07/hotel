@@ -45,21 +45,6 @@ const isAuthenticated = async (req, res, next) => {
   
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 app.get("/", (req, res) => {
     res.send("Welcome to the homepage!");
 }); 
@@ -251,6 +236,7 @@ app.post("/signup", async (req, res) => {
                 id: user.id
             }
         };
+        
         const authtoken = jwt.sign(data, JWT_SECRET);
       res.status(200).json({ success: true, authtoken });
         // res.json({ authtoken });
